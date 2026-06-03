@@ -72,7 +72,7 @@ print(type(boolean_value))
 user_input = input("Enter your name: ") # This takes input from the user and stores it.
 print(user_input)
 
-age_input = int(input("Enter your age: "))
+age_input = int(input("Enter your age: ")) # Here the input from user is coverted to an integer.
 print(age_input)
 
 # String Concatenation
