@@ -205,3 +205,7 @@ sentence_3 = "Name:\tLakshman"
 sentence_4 = "Age:\t18"
 print(sentence_3)
 print(sentence_4)
+
+# Quotes in Strings
+# \" is used to print quote inside strings.
+print("Lakshman\"s House")
