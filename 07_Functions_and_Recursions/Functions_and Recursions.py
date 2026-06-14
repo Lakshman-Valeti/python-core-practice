@@ -133,3 +133,53 @@ square = lambda x: x*x
 
 print(square(5))
 print(square(10))
+
+# Recursion
+# function calling itself
+# There are two components of recursion
+# 1. Base Case- Stopping condition
+# Without base condition it raises to recursive error.
+# 2. Recursive call - function calls itself 
+# Example 1: Printing natural numbers upto 6.
+def print_nums(n):
+
+    if n == 6:
+        return
+
+    print(n)
+
+    print_nums(n+1)
+
+print_nums(1)
+
+# Example 2: Factorial of n.
+def factorial(n):
+    if n==0:
+        return 1
+    return n*factorial(n-1)
+
+print(factorial(5))    
+
+# Example 3: Sum of n numbers.
+def sum_of(n):
+    if n == 1:
+        return 1
+    return n + sum_of(n-1)
+
+print(sum_of(10))
+
+# Example 4: Reversing String.
+def reverse_string(s):
+    if len(s)==0:
+        return ""
+    return reverse_string(s[1:]) + s[0]
+
+print(reverse_string("Hello"))
+
+# Example 5: Power function(finding power of a number)
+def power(a,b):
+    if b==0:
+        return 1
+    return a*power(a,b-1)
+
+print(power(2,5))
